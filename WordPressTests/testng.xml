@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Validating User login">
+		<classes>
+			<class name="wordPressTests.LoginTest" />
+		</classes>
+	</test>
+	<test name="Validating Modification of Text Fields">
+		<classes>
+			<class name="wordPressTests.ModifyTextFieldsTest" />
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->
