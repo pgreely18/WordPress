@@ -11,5 +11,10 @@
 			<class name="wordPressTests.ModifyTextFieldsTest" />
 		</classes>
 	</test>
+	<test name="Validating Adding and Removing Profile URL Links">
+		<classes>
+			<class name="wordPressTests.ProfileLinkTests" />
+		</classes>
+	</test>
 	<!-- Test -->
 </suite> <!-- Suite -->

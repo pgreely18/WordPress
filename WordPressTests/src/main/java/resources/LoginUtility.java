@@ -31,7 +31,7 @@ public class LoginUtility {
 		}
 		lp.getMyProfile().click();
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
