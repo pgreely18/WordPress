@@ -16,5 +16,10 @@
 			<class name="wordPressTests.ProfileLinkTests" />
 		</classes>
 	</test>
+	<test name="Validating Modification of Profile Details and Saving Them">
+		<classes>
+			<class name="wordPressTests.UpdateProfileDetailsTest" />
+		</classes>
+	</test>
 	<!-- Test -->
 </suite> <!-- Suite -->
