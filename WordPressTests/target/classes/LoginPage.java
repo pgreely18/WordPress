@@ -13,7 +13,7 @@ public class LoginPage {
 	By password = By.xpath("//input[@id='password']");
 	By continueButton = By.xpath("//button[contains(text(),'Continue')]");
 	By login = By.xpath("//button[contains(text(),'Log In')]");
-	By myProfile = By.xpath("//header/a[3]/span[1]/img[1]");
+	By myProfile = By.xpath("//header/a[2]/span[1]/img[1]");
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;

@@ -1,77 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="134032" started-at="2021-08-20T19:01:45Z" finished-at="2021-08-20T19:03:59Z">
+  <suite name="Suite" duration-ms="278462" started-at="2021-08-23T16:15:35Z" finished-at="2021-08-23T16:20:14Z">
     <groups>
     </groups>
-    <test name="Validating User login" duration-ms="24535" started-at="2021-08-20T19:01:45Z" finished-at="2021-08-20T19:02:10Z">
+    <test name="Validating User login" duration-ms="36427" started-at="2021-08-23T16:15:35Z" finished-at="2021-08-23T16:16:12Z">
       <class name="wordPressTests.LoginTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:wordPressTests.LoginTest@12468a38]" name="initialize" is-config="true" duration-ms="3580" started-at="2021-08-20T15:01:45Z" finished-at="2021-08-20T15:01:49Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:wordPressTests.LoginTest@12468a38]" name="initialize" is-config="true" duration-ms="5720" started-at="2021-08-23T12:15:35Z" finished-at="2021-08-23T12:15:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="baseLogin()[pri:0, instance:wordPressTests.LoginTest@12468a38]" name="baseLogin" duration-ms="20367" started-at="2021-08-20T15:01:49Z" finished-at="2021-08-20T15:02:09Z">
+        <test-method status="PASS" signature="baseLogin()[pri:0, instance:wordPressTests.LoginTest@12468a38]" name="baseLogin" duration-ms="26091" started-at="2021-08-23T12:15:41Z" finished-at="2021-08-23T12:16:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseLogin -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.LoginTest@12468a38]" name="teardown" is-config="true" duration-ms="542" started-at="2021-08-20T15:02:09Z" finished-at="2021-08-20T15:02:10Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.LoginTest@12468a38]" name="teardown" is-config="true" duration-ms="4575" started-at="2021-08-23T12:16:07Z" finished-at="2021-08-23T12:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- wordPressTests.LoginTest -->
     </test> <!-- Validating User login -->
-    <test name="Validating Modification of Text Fields" duration-ms="109461" started-at="2021-08-20T19:02:10Z" finished-at="2021-08-20T19:03:59Z">
+    <test name="Validating Modification of Text Fields" duration-ms="126067" started-at="2021-08-23T16:16:12Z" finished-at="2021-08-23T16:18:18Z">
       <class name="wordPressTests.ModifyTextFieldsTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="22128" started-at="2021-08-20T15:02:10Z" finished-at="2021-08-20T15:02:32Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="27953" started-at="2021-08-23T12:16:12Z" finished-at="2021-08-23T12:16:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="modifyDescription()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyDescription" duration-ms="982" started-at="2021-08-20T15:02:32Z" finished-at="2021-08-20T15:02:33Z">
+        <test-method status="PASS" signature="modifyDescription()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyDescription" duration-ms="921" started-at="2021-08-23T12:16:40Z" finished-at="2021-08-23T12:16:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyDescription -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="4154" started-at="2021-08-20T15:02:33Z" finished-at="2021-08-20T15:02:37Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="436" started-at="2021-08-23T12:16:41Z" finished-at="2021-08-23T12:16:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="22444" started-at="2021-08-20T15:02:37Z" finished-at="2021-08-20T15:02:59Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="29182" started-at="2021-08-23T12:16:41Z" finished-at="2021-08-23T12:17:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="modifyDisplayName()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyDisplayName" duration-ms="785" started-at="2021-08-20T15:02:59Z" finished-at="2021-08-20T15:03:00Z">
+        <test-method status="PASS" signature="modifyDisplayName()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyDisplayName" duration-ms="680" started-at="2021-08-23T12:17:10Z" finished-at="2021-08-23T12:17:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyDisplayName -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="4176" started-at="2021-08-20T15:03:00Z" finished-at="2021-08-20T15:03:04Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="4474" started-at="2021-08-23T12:17:11Z" finished-at="2021-08-23T12:17:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="22663" started-at="2021-08-20T15:03:04Z" finished-at="2021-08-20T15:03:27Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="27390" started-at="2021-08-23T12:17:15Z" finished-at="2021-08-23T12:17:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="modifyFirstName()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyFirstName" duration-ms="598" started-at="2021-08-20T15:03:27Z" finished-at="2021-08-20T15:03:28Z">
+        <test-method status="PASS" signature="modifyFirstName()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyFirstName" duration-ms="647" started-at="2021-08-23T12:17:43Z" finished-at="2021-08-23T12:17:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyFirstName -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="4186" started-at="2021-08-20T15:03:28Z" finished-at="2021-08-20T15:03:32Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="322" started-at="2021-08-23T12:17:43Z" finished-at="2021-08-23T12:17:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="22621" started-at="2021-08-20T15:03:32Z" finished-at="2021-08-20T15:03:54Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="login" is-config="true" duration-ms="33034" started-at="2021-08-23T12:17:44Z" finished-at="2021-08-23T12:18:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="modifyLastName()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyLastName" duration-ms="524" started-at="2021-08-20T15:03:54Z" finished-at="2021-08-20T15:03:55Z">
+        <test-method status="PASS" signature="modifyLastName()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="modifyLastName" duration-ms="540" started-at="2021-08-23T12:18:17Z" finished-at="2021-08-23T12:18:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyLastName -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="4188" started-at="2021-08-20T15:03:55Z" finished-at="2021-08-20T15:03:59Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ModifyTextFieldsTest@77847718]" name="teardown" is-config="true" duration-ms="478" started-at="2021-08-23T12:18:17Z" finished-at="2021-08-23T12:18:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- wordPressTests.ModifyTextFieldsTest -->
     </test> <!-- Validating Modification of Text Fields -->
+    <test name="Validating Adding and Removing Profile URL Links" duration-ms="37741" started-at="2021-08-23T16:18:18Z" finished-at="2021-08-23T16:18:56Z">
+      <class name="wordPressTests.ProfileLinkTests">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:wordPressTests.ProfileLinkTests@293a5bf6]" name="initialize" is-config="true" duration-ms="28477" started-at="2021-08-23T12:18:18Z" finished-at="2021-08-23T12:18:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="profileAddLink()[pri:0, instance:wordPressTests.ProfileLinkTests@293a5bf6]" name="profileAddLink" duration-ms="1881" started-at="2021-08-23T12:18:46Z" finished-at="2021-08-23T12:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileAddLink -->
+        <test-method status="PASS" signature="profileDeleteLink()[pri:0, instance:wordPressTests.ProfileLinkTests@293a5bf6]" name="profileDeleteLink" duration-ms="510" started-at="2021-08-23T12:18:48Z" finished-at="2021-08-23T12:18:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileDeleteLink -->
+        <test-method status="PASS" signature="wordPressAddLink()[pri:0, instance:wordPressTests.ProfileLinkTests@293a5bf6]" name="wordPressAddLink" duration-ms="1176" started-at="2021-08-23T12:18:49Z" finished-at="2021-08-23T12:18:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wordPressAddLink -->
+        <test-method status="PASS" signature="wordPressDeleteLink()[pri:0, instance:wordPressTests.ProfileLinkTests@293a5bf6]" name="wordPressDeleteLink" duration-ms="516" started-at="2021-08-23T12:18:50Z" finished-at="2021-08-23T12:18:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wordPressDeleteLink -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.ProfileLinkTests@293a5bf6]" name="teardown" is-config="true" duration-ms="5172" started-at="2021-08-23T12:18:50Z" finished-at="2021-08-23T12:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- wordPressTests.ProfileLinkTests -->
+    </test> <!-- Validating Adding and Removing Profile URL Links -->
+    <test name="Validating Modification of Profile Details and Saving Them" duration-ms="77947" started-at="2021-08-23T16:18:56Z" finished-at="2021-08-23T16:20:14Z">
+      <class name="wordPressTests.UpdateProfileDetailsTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:wordPressTests.UpdateProfileDetailsTest@38d8f54a]" name="initialize" is-config="true" duration-ms="29801" started-at="2021-08-23T12:18:56Z" finished-at="2021-08-23T12:19:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="updateAllTextFieldsSave()[pri:0, instance:wordPressTests.UpdateProfileDetailsTest@38d8f54a]" name="updateAllTextFieldsSave" duration-ms="41215" started-at="2021-08-23T12:19:26Z" finished-at="2021-08-23T12:20:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAllTextFieldsSave -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:wordPressTests.UpdateProfileDetailsTest@38d8f54a]" name="teardown" is-config="true" duration-ms="6928" started-at="2021-08-23T12:20:07Z" finished-at="2021-08-23T12:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- wordPressTests.UpdateProfileDetailsTest -->
+    </test> <!-- Validating Modification of Profile Details and Saving Them -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -125,6 +125,31 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="wordPressTests.ModifyTextFieldsTest" hash-for-method="modifyLastName">modifyLastName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="wordPressTests.ProfileLinkTests" hash-for-method="profileAddLink">profileAddLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="wordPressTests.ProfileLinkTests" hash-for-method="profileDeleteLink">profileDeleteLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="wordPressTests.UpdateProfileDetailsTest" hash-for-method="updateAllTextFieldsSave">updateAllTextFieldsSave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="wordPressTests.ProfileLinkTests" hash-for-method="wordPressAddLink">wordPressAddLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="wordPressTests.ProfileLinkTests" hash-for-method="wordPressDeleteLink">wordPressDeleteLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -137,6 +162,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">wordPressTests.ProfileLinkTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="profileAddLink">
+                  </a> <!-- profileAddLink -->
+                  <span class="method-name">profileAddLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="profileDeleteLink">
+                  </a> <!-- profileDeleteLink -->
+                  <span class="method-name">profileDeleteLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wordPressAddLink">
+                  </a> <!-- wordPressAddLink -->
+                  <span class="method-name">wordPressAddLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wordPressDeleteLink">
+                  </a> <!-- wordPressDeleteLink -->
+                  <span class="method-name">wordPressDeleteLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -176,6 +237,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">wordPressTests.UpdateProfileDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAllTextFieldsSave">
+                  </a> <!-- updateAllTextFieldsSave -->
+                  <span class="method-name">updateAllTextFieldsSave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">wordPressTests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -208,6 +284,16 @@
       &lt;class name=&quot;wordPressTests.ModifyTextFieldsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating Modification of Text Fields --&gt;
+  &lt;test name=&quot;Validating Adding and Removing Profile URL Links&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;wordPressTests.ProfileLinkTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Adding and Removing Profile URL Links --&gt;
+  &lt;test name=&quot;Validating Modification of Profile Details and Saving Them&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;wordPressTests.UpdateProfileDetailsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Modification of Profile Details and Saving Them --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,6 +309,12 @@
               </li>
               <li>
                 <span class="test-name">Validating Modification of Text Fields (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating Adding and Removing Profile URL Links (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating Modification of Profile Details and Saving Them (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,32 +340,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'baseLogin')
-data.setCell(0, 2, 'wordPressTests.LoginTest')
-data.setCell(0, 3, 20367);
+data.setCell(0, 1, 'updateAllTextFieldsSave')
+data.setCell(0, 2, 'wordPressTests.UpdateProfileDetailsTest')
+data.setCell(0, 3, 41215);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'modifyDescription')
-data.setCell(1, 2, 'wordPressTests.ModifyTextFieldsTest')
-data.setCell(1, 3, 982);
+data.setCell(1, 1, 'baseLogin')
+data.setCell(1, 2, 'wordPressTests.LoginTest')
+data.setCell(1, 3, 26091);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'modifyDisplayName')
-data.setCell(2, 2, 'wordPressTests.ModifyTextFieldsTest')
-data.setCell(2, 3, 785);
+data.setCell(2, 1, 'profileAddLink')
+data.setCell(2, 2, 'wordPressTests.ProfileLinkTests')
+data.setCell(2, 3, 1881);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'modifyFirstName')
-data.setCell(3, 2, 'wordPressTests.ModifyTextFieldsTest')
-data.setCell(3, 3, 598);
+data.setCell(3, 1, 'wordPressAddLink')
+data.setCell(3, 2, 'wordPressTests.ProfileLinkTests')
+data.setCell(3, 3, 1176);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'modifyLastName')
+data.setCell(4, 1, 'modifyDescription')
 data.setCell(4, 2, 'wordPressTests.ModifyTextFieldsTest')
-data.setCell(4, 3, 524);
+data.setCell(4, 3, 921);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'modifyDisplayName')
+data.setCell(5, 2, 'wordPressTests.ModifyTextFieldsTest')
+data.setCell(5, 3, 680);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'modifyFirstName')
+data.setCell(6, 2, 'wordPressTests.ModifyTextFieldsTest')
+data.setCell(6, 3, 647);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'modifyLastName')
+data.setCell(7, 2, 'wordPressTests.ModifyTextFieldsTest')
+data.setCell(7, 3, 540);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'wordPressDeleteLink')
+data.setCell(8, 2, 'wordPressTests.ProfileLinkTests')
+data.setCell(8, 3, 516);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'profileDeleteLink')
+data.setCell(9, 2, 'wordPressTests.ProfileLinkTests')
+data.setCell(9, 3, 510);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -306,63 +418,105 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">baseLogin</span>
-                <span class="method-start">3611 ms</span>
+                <span class="method-start">5748 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">23983 ms</span>
+                <span class="method-start">31845 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">wordPressTests.ModifyTextFieldsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">24564 ms</span>
+                <span class="method-start">36494 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">modifyDescription</span>
-                <span class="method-start">46692 ms</span>
+                <span class="method-start">64447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">47676 ms</span>
+                <span class="method-start">65369 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">51831 ms</span>
+                <span class="method-start">65806 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">modifyDisplayName</span>
-                <span class="method-start">74275 ms</span>
+                <span class="method-start">94988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">75062 ms</span>
+                <span class="method-start">95669 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">79239 ms</span>
+                <span class="method-start">100144 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">modifyFirstName</span>
-                <span class="method-start">101902 ms</span>
+                <span class="method-start">127534 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">102502 ms</span>
+                <span class="method-start">128182 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">106688 ms</span>
+                <span class="method-start">128504 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">modifyLastName</span>
-                <span class="method-start">129309 ms</span>
+                <span class="method-start">161538 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">129834 ms</span>
+                <span class="method-start">162080 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">wordPressTests.ProfileLinkTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">162719 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">profileAddLink</span>
+                <span class="method-start">191197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">profileDeleteLink</span>
+                <span class="method-start">193080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wordPressAddLink</span>
+                <span class="method-start">193592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wordPressDeleteLink</span>
+                <span class="method-start">194769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">195287 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">wordPressTests.UpdateProfileDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">200509 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">updateAllTextFieldsSave</span>
+                <span class="method-start">230310 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">271527 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

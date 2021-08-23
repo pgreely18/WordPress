@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Validating Modification of Text Fields(failed)">
+    <classes>
+      <class name="wordPressTests.ModifyTextFieldsTest">
+        <methods>
+          <include name="modifyLastName"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- wordPressTests.ModifyTextFieldsTest -->
+    </classes>
+  </test> <!-- Validating Modification of Text Fields(failed) -->
+</suite> <!-- Failed suite [Suite] -->
