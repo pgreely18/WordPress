@@ -20,6 +20,7 @@ public class ProfileLinkTests extends Base {
 	public WebDriver driver;
 	By addProfile = By.xpath("//body/div[@id='wpcom']/div[1]/div[2]/div[2]/main[1]/div[3]/div[2]/button[1]");
 	By addURL = By.xpath("//button[contains(text(),'Add URL')]");
+	By addWordPress = By.xpath("//button[contains(text(),'Add WordPress Site')]");
 	By addSite = By.xpath("//button[contains(text(),'Add Site')]");
 	By profileTitle = By.className("profile-link__title");
 	By profileURL = By.className("profile-link__url");
@@ -43,9 +44,7 @@ public class ProfileLinkTests extends Base {
 	 * Add the expected Profile link.
 	 */
 	public void restoreLink() {
-		// TODO Add System out to see where script is when hitting failures
 		driver.findElement(addProfile).click();
-		// TODO Maybe add a wait for this button ?
 		driver.findElement(addURL).click();
 		driver.findElement(By.name("value")).sendKeys("www.linkedin.com/in/peter-greely-076954b8/");
 		driver.findElement(By.name("title")).sendKeys("Senior Software Test Engineer");
@@ -53,7 +52,7 @@ public class ProfileLinkTests extends Base {
 	}
 
 	@Test
-	public void addProfileLink() {
+	public void profileAddLink() {
 		// Add New Profile Link
 		driver.findElement(addProfile).click();
 		driver.findElement(addURL).click();
@@ -73,10 +72,40 @@ public class ProfileLinkTests extends Base {
 	}
 
 	@Test
-	public void deleteProfileLink() {
+	public void profileDeleteLink() {
 		// First Validate the Profile Link Existence
 		Assert.assertEquals(driver.findElement(profileTitle).getText(), "Senior Software Test Engineer");
 		Assert.assertEquals(driver.findElement(profileURL).getText(), "www.linkedin.com/in/peter-greely-076954b8/");
+
+		// Delete the Link
+		removeLink();
+
+		// Second Validate the Profile Link Removed
+		Assert.assertEquals(driver.findElement(By.className("profile-links__no-links")).getText(), "You have no sites in your profile links. You may add sites if you'd like.");
+	}
+
+	@Test
+	public void wordPressAddLink() {
+		// Add New Profile Link
+		driver.findElement(addProfile).click();
+		driver.findElement(addWordPress).click();
+		// Validate New Fields Appeared
+		Assert.assertEquals(driver.findElement(addSite).isEnabled(), false);
+		Assert.assertEquals(driver.findElement(By.xpath("//button[contains(text(),'Cancel')]")).isEnabled(), true);
+		// Add New Profile Site
+		driver.findElement(By.xpath("//body/div[@id='wpcom']/div[1]/div[2]/div[2]/main[1]/div[4]/div[1]/form[1]/ul[1]/li[1]/input[1]")).click();
+		Assert.assertEquals(driver.findElement(addSite).isEnabled(), true);
+		driver.findElement(addSite).click();
+		// Validate Existence of new Site
+		Assert.assertEquals(driver.findElement(profileTitle).getText(), "Site Title");
+		Assert.assertEquals(driver.findElement(profileURL).getText(), "pgreely21.wordpress.com");
+	}
+
+	@Test
+	public void wordPressDeleteLink() {
+		// First Validate the Profile Link Existence
+		Assert.assertEquals(driver.findElement(profileTitle).getText(), "Site Title");
+		Assert.assertEquals(driver.findElement(profileURL).getText(), "pgreely21.wordpress.com");
 
 		// Delete the Link
 		removeLink();

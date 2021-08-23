@@ -46,10 +46,10 @@ public class ModifyTextFieldsTest extends Base {
 	@Test
 	public void modifyLastName() {
 		driver.findElement(By.xpath("//input[@id='last_name']")).clear();
-		driver.findElement(By.xpath("//input[@id='last_name']")).sendKeys("Miller");
+		driver.findElement(By.xpath("//input[@id='last_name']")).sendKeys("Wayne");
 		// Validate Change; Do Not Save
 		Assert.assertEquals(driver.findElement(By.xpath("//button[contains(text(),'Save profile details')]")).isEnabled(), true);
-		Assert.assertEquals(driver.findElement(By.id("last_name")).getAttribute("value"), "Miller");
+		Assert.assertEquals(driver.findElement(By.id("last_name")).getAttribute("value"), "Wayne");
 		// Validate Other Fields Have Not Changed
 		Assert.assertEquals(driver.findElement(By.id("first_name")).getAttribute("value"), "Peter");
 		Assert.assertEquals(driver.findElement(By.id("display_name")).getAttribute("value"), "pgreely21");
@@ -60,10 +60,10 @@ public class ModifyTextFieldsTest extends Base {
 	public void modifyDisplayName() {
 		driver.findElement(By.xpath("//input[@id='display_name']")).clear();
 		driver.findElement(By.xpath("//input[@id='display_name']")).sendKeys("");
-		driver.findElement(By.xpath("//input[@id='display_name']")).sendKeys("jMiller21");
+		driver.findElement(By.xpath("//input[@id='display_name']")).sendKeys("jWayne21");
 		// Validate Change; Do Not Save
 		Assert.assertEquals(driver.findElement(By.xpath("//button[contains(text(),'Save profile details')]")).isEnabled(), true);
-		Assert.assertEquals(driver.findElement(By.id("display_name")).getAttribute("value"), "jMiller21");
+		Assert.assertEquals(driver.findElement(By.id("display_name")).getAttribute("value"), "jWayne21");
 		// Validate Other Fields Have Not Changed
 		Assert.assertEquals(driver.findElement(By.id("first_name")).getAttribute("value"), "Peter");
 		Assert.assertEquals(driver.findElement(By.id("last_name")).getAttribute("value"), "Greely");
